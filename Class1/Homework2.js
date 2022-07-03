@@ -27,3 +27,45 @@ const sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiO
  * 6. word 'Body' is present only once. (true or false)
  */
 
+
+let result = sentence1.length >= 10 ? 15 : 25; 
+console.log(`result -> ${result}`);
+
+let sentence2_Replace = sentence2.replace(/a/gi, 'Alpha');
+console.log(`\nsentence2 -> ${sentence2}`);
+console.log(`sentence2_Replace -> ${sentence2_Replace}`);
+
+let sentence3_length = sentence3.length;
+console.log(`sentence3_length -> ${sentence3_length}`);
+
+let sentence3_StartsWithPatt = ('HEALTH');
+let sentence3_UpperCase = sentence3.toUpperCase('HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.');
+let sentence3_StartsWith_health = sentence3_UpperCase.startsWith(sentence3_StartsWithPatt);
+console.log(`\nsentence3 -> ${sentence3}`);
+console.log(`does ${sentence3} start with 'health' : ${sentence3_StartsWith_health}`);
+
+let sentence3_IncludePatt = ('BODY');
+let sentence3_Include_BOD = sentence3_UpperCase.includes(sentence3_IncludePatt);
+console.log(`\nsentence3 -> ${sentence3}`);
+console.log(`does ${sentence3} include 'body' : ${sentence3_Include_BOD}`);
+
+let sentence3_Index = sentence3_UpperCase.indexOf('BODY');
+console.log(`\nIndex of body in sentence 3 is ${sentence3_Index}`);
+
+let sentence3_CharAt = sentence3.charAt(70)
+console.log(`\nLast character in sentence 3 is ${sentence3_CharAt}`);
+
+let sentence3_LastIndex = sentence3_UpperCase.lastIndexOf('BODY');
+console.log(`\nCharacter last index is ${sentence3_LastIndex}`);
+
+let sentence3_LastIndexBod = 49
+let sentence3_Bodyonce = sentence3_LastIndexBod === sentence3_Index ? true : false ;
+console.log(`\nOnly Occurence ${sentence3_Bodyonce}`); 
+
+
+
+
+
+
+
+
